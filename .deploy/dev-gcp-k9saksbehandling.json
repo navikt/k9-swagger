@@ -1,0 +1,24 @@
+{
+  "ingresses": [
+    "https://k9swagger.intern.dev.nav.no"
+  ],
+  "minReplicas": "1",
+  "maxReplicas": "1",
+  "env": "development",
+  "allowAllUsers": true,
+  "groups": [
+    "0bc9661c-975c-4adb-86d1-a97172490662"
+  ],
+  "externals": [
+    "k9-abakus.dev-fss-pub.nais.io"
+  ],
+  "customCss": "",
+  "proxyRedirects": [
+    {
+      "path": "/k9abakus/api",
+      "url": "https://k9-abakus.dev-fss-pub.nais.io",
+      "scope": "api://dev-fss.k9saksbehandling.k9-abakus/swagger",
+      "name": "k9-abakus"
+    }
+  ]
+}

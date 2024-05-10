@@ -1,0 +1,22 @@
+{
+  "ingresses": [ "https://k9swagger.intern.nav.no" ],
+  "minReplicas": "1",
+  "maxReplicas": "2",
+  "env": "production",
+  "allowAllUsers": false,
+  "groups": [
+    "1509dc91-a955-4e72-b64c-2f049e37c0c6"
+  ],
+  "externals": [
+    "k9-abakus.prod-fss-pub.nais.io"
+  ],
+  "customCss": ".swagger-ui .topbar { background-color: red; } .swagger-container { background: #F9D0C4; } .swagger-ui .scheme-container { background: #F9D0C4; }",
+  "proxyRedirects": [
+    {
+      "path": "/k9abakus/api",
+      "url": "https://k9-abakus.prod-fss-pub.nais.io",
+      "scope": "api://prod-fss.k9saksbehandling.k9-abakus/swagger",
+      "name": "k9-abakus"
+    }
+  ]
+}

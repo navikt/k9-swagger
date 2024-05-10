@@ -19,7 +19,7 @@ jobs:
     name: Deploy dev
     permissions:
       id-token: write
-    uses: navikt/fp-gha-workflows/.github/workflows/deploy.yml@main # ratchet:exclude
+    uses: navikt/fp-gha-workflows/.github/workflows/maven-deploy.yml@main # ratchet:exclude
     with:
       gar: true
       image: ${{ inputs.image }}

@@ -1,10 +1,10 @@
 apiVersion: "nais.io/v1alpha1"
 kind: "Application"
 metadata:
-  name: fp-swagger
-  namespace: teamforeldrepenger
+  name: k9-swagger
+  namespace: k9saksbehandling
   labels:
-    team: teamforeldrepenger
+    team: k9saksbehandling
 spec:
   image: {{image}}
   port: 8080
@@ -53,8 +53,6 @@ spec:
       autoLogin: true
   accessPolicy:
     outbound:
-      rules:
-        - application: fpoversikt
       external:
         {{#each externals as |external|}}
         - host: "{{external}}"

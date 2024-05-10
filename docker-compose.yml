@@ -1,7 +1,7 @@
 version: '3.7'
 
 services:
-  fpswagger:
+  k9swagger:
     build:
       context: .
       dockerfile: Dockerfile
@@ -33,7 +33,7 @@ services:
           {"path":"/fpsak/api","url":"http://192.168.5.2:8081/fpsak/api/openapi.json","scopes":"api://fpsak/.default","name":"fpsak"}
         ]}
       PORT: 9090
-    container_name: fpswagger
+    container_name: k9swagger
     healthcheck:
       test: [ "CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:9090/isReady" ]
       interval: 15s
