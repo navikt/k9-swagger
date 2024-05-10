@@ -46,6 +46,7 @@ jobs:
         if: github.ref_name == 'main'
         uses: navikt/sif-gha-workflows/.github/actions/maven/build-push-docker-image@main # ratchet:exclude
         with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           build-version: ${{ steps.generate-build-version.outputs.build-version }}
           push-image: ${{ github.ref_name == 'master' }}
           project_id: ${{ vars.NAIS_MANAGEMENT_PROJECT_ID }}
