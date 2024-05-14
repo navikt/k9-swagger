@@ -48,9 +48,10 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           build-version: ${{ steps.generate-build-version.outputs.build-version }}
-          push-image: ${{ github.ref_name == 'master' }}
+          push-image: ${{ github.ref_name == 'main' }}
           project_id: ${{ vars.NAIS_MANAGEMENT_PROJECT_ID }}
           identity_provider: ${{ secrets.NAIS_WORKLOAD_IDENTITY_PROVIDER }}
+
 #  deploy-dev:
 #    name: Deploy dev
 #    permissions:
