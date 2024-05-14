@@ -54,6 +54,7 @@ jobs:
   deploy-dev:
     name: Deploy dev
     permissions:
+      contents: write
       id-token: write
     if: github.ref_name == 'main'
     needs: build-app
