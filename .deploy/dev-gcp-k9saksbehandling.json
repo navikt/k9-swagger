@@ -15,7 +15,7 @@
   "customCss": "",
   "proxyRedirects": [
     {
-      "path": "/k9/abakus/ekstern/api",
+      "path": "/k9/abakus/api",
       "url": "https://k9-abakus.dev-fss-pub.nais.io",
       "scope": "api://dev-fss.k9saksbehandling.k9-abakus/swagger",
       "name": "k9-abakus"
