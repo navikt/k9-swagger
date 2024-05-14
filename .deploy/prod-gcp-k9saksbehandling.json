@@ -13,7 +13,7 @@
   "customCss": ".swagger-ui .topbar { background-color: red; } .swagger-container { background: #F9D0C4; } .swagger-ui .scheme-container { background: #F9D0C4; }",
   "proxyRedirects": [
     {
-      "path": "/k9abakus/api",
+      "path": "/k9/abakus/ekstern/api",
       "url": "https://k9-abakus.prod-fss-pub.nais.io",
       "scope": "api://prod-fss.k9saksbehandling.k9-abakus/swagger",
       "name": "k9-abakus"
