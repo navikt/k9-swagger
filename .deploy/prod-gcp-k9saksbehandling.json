@@ -20,7 +20,7 @@
     },
     {
       "path": "/k9/tilbake/api",
-      "url": "https://k9-abakus.prod-fss-pub.nais.io",
+      "url": "https://k9-tilbake.prod-fss-pub.nais.io",
       "scope": "api://prod-fss.k9saksbehandling.k9-tilbake/swagger",
       "name": "k9-tilbake"
     }
