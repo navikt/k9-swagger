@@ -70,6 +70,7 @@ jobs:
   deploy-prod:
     name: Deploy prod
     permissions:
+      contents: write
       id-token: write
     if: github.ref_name == 'main'
     needs: [build-app, deploy-dev]
