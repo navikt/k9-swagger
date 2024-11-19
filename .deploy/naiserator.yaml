@@ -53,6 +53,8 @@ spec:
       autoLogin: true
   accessPolicy:
     outbound:
+      rules:
+        - application: k9-inntektsmelding
       external:
         {{#each externals as |external|}}
         - host: "{{external}}"
