@@ -28,7 +28,7 @@
     },
     {
       "path": "/k9/inntektsmelding/forvaltning/api",
-      "url": "https://k9-inntektsmelding.intern.dev.nav.no",
+      "url": "http://k9/inntektsmelding",
       "scope": "api://dev-gcp.k9saksbehandling.k9-inntektsmelding/swagger",
       "name": "k9-inntektsmelding"
     }
