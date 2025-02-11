@@ -1,5 +1,7 @@
 {
-  "ingresses": [ "https://k9swagger.intern.nav.no" ],
+  "ingresses": [
+    "https://k9swagger.intern.nav.no"
+  ],
   "minReplicas": "1",
   "maxReplicas": "2",
   "env": "production",
@@ -23,6 +25,12 @@
       "url": "https://k9-tilbake.prod-fss-pub.nais.io",
       "scope": "api://prod-fss.k9saksbehandling.k9-tilbake/swagger",
       "name": "k9-tilbake"
+    },
+    {
+      "path": "/k9/inntektsmelding/forvaltning/api",
+      "url": "http://k9-inntektsmelding.k9saksbehandling",
+      "scope": "api://prod-gcp.k9saksbehandling.k9-inntektsmelding/swagger",
+      "name": "k9-inntektsmelding"
     }
   ]
 }
