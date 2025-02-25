@@ -33,7 +33,7 @@
       "name": "k9-inntektsmelding"
     },
     {
-      "path": "/k9/los/api",
+      "path": "/",
       "url": "https://k9-los-api.dev-fss-pub.nais.io",
       "scope": "api://dev-fss.k9saksbehandling.k9-los-api/swagger",
       "name": "k9-los"
