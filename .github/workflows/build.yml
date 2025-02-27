@@ -31,23 +31,33 @@ jobs:
           node-version: 22
           registry-url: https://npm.pkg.github.com/
           scope: '@navikt'
-          cache: 'yarn'
       - name: Generate build version
         id: generate-build-version
         run: |
           echo "build-version=$(date +%Y.%m.%d.%H%M%S)-$(echo $GITHUB_SHA | cut -c1-7)" >> $GITHUB_OUTPUT
       - name: Print build version
         run: echo "Generated build-version is ${{ steps.generate-build-version.outputs.build-version }}"
-      - name: Run yarn install
-        run: yarn install --ignore-optional --no-progress --frozen-lockfile
+
+      - name: Install server dependencies
+        run: npm install
+        working-directory: server
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build server
+        run: npm run build
+        working-directory: server
+
       - name: Bygg og push docker image
         if: github.ref_name == 'main'
         uses: navikt/sif-gha-workflows/.github/actions/maven/build-push-docker-image@main # ratchet:exclude
         with:
           build-version: ${{ steps.generate-build-version.outputs.build-version }}
           push-image: ${{ github.ref_name == 'main' }}
+          docker_context: "./server"
+          dockerfile: "./server/Dockerfile"
+          project_id: ${{ vars.NAIS_MANAGEMENT_PROJECT_ID }}
+          identity_provider: ${{ secrets.NAIS_WORKLOAD_IDENTITY_PROVIDER }}
 
   deploy-dev:
     name: Deploy dev

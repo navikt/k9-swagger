@@ -4,6 +4,7 @@ LABEL org.opencontainers.image.source=https://github.com/navikt/k9-swagger
 ENV TZ="Europe/Oslo"
 ENV NODE_ENV production
 
+COPY . /app
 WORKDIR /app
 
 COPY server.js package.json ./
@@ -12,3 +13,4 @@ COPY node_modules ./node_modules/
 
 EXPOSE 8080
 CMD ["./server.js"]
+CMD ["dist/server.js"]

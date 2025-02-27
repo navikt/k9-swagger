@@ -4,7 +4,7 @@ services:
   k9swagger:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: server/Dockerfile
     ports:
       - "9090:9090"
     environment:
