@@ -6,11 +6,5 @@ ENV NODE_ENV production
 
 COPY . /app
 WORKDIR /app
-
-COPY server.js package.json ./
-COPY server ./server/
-COPY node_modules ./node_modules/
-
 EXPOSE 8080
-CMD ["./server.js"]
 CMD ["dist/server.js"]
