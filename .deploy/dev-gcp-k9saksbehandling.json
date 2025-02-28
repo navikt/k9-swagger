@@ -37,6 +37,12 @@
       "url": "https://k9-los-api.dev-fss-pub.nais.io",
       "scope": "api://dev-fss.k9saksbehandling.k9-los-api/swagger",
       "name": "k9-los"
+    },
+    {
+      "path": "/sif/sif-abac-pdp/api",
+      "url": "https://sif-abac-pdp-gcp.intern.dev.nav.no",
+      "scope": "api://dev-gcp.k9saksbehandling.sif-abac-pdp/swagger",
+      "name": "sif-abac-pdp"
     }
   ]
 }
