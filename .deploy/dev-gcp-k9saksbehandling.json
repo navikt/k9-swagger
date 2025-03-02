@@ -9,8 +9,12 @@
   "groups": [
     "0bc9661c-975c-4adb-86d1-a97172490662"
   ],
-  "externals": [
+  "outboundExternals": [
     "k9-abakus.dev-fss-pub.nais.io"
+  ],
+  "ouboundRules" : [
+    "k9-inntektsmelding",
+    "sif-abac-pdp"
   ],
   "customCss": "",
   "proxyRedirects": [
@@ -40,7 +44,7 @@
     },
     {
       "path": "/sif/sif-abac-pdp/api",
-      "url": "https://sif-abac-pdp-gcp.intern.dev.nav.no",
+      "url": "https://sif-abac-pdp.k9saksbehandling",
       "scope": "api://dev-gcp.k9saksbehandling.sif-abac-pdp/swagger",
       "name": "sif-abac-pdp"
     }

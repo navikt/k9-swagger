@@ -54,9 +54,11 @@ spec:
   accessPolicy:
     outbound:
       rules:
-        - application: k9-inntektsmelding
+        {{#each outboundRules as |outboundApplication|}}
+        - application: "{{outboundApplication}}"
+        {{/each}}
       external:
-        {{#each externals as |external|}}
+        {{#each outboundExternals as |external|}}
         - host: "{{external}}"
         {{/each}}
   env:

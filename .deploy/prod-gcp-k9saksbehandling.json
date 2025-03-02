@@ -9,8 +9,11 @@
   "groups": [
     "1509dc91-a955-4e72-b64c-2f049e37c0c6"
   ],
-  "externals": [
+  "outboundExternals": [
     "k9-abakus.prod-fss-pub.nais.io"
+  ],
+  "ouboundRules" : [
+    "k9-inntektsmelding"
   ],
   "customCss": ".swagger-ui .topbar { background-color: red; } .swagger-container { background: #F9D0C4; } .swagger-ui .scheme-container { background: #F9D0C4; }",
   "proxyRedirects": [
