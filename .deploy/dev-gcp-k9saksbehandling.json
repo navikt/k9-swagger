@@ -12,7 +12,7 @@
   "outboundExternals": [
     "k9-abakus.dev-fss-pub.nais.io"
   ],
-  "ouboundRules" : [
+  "outboundRules" : [
     "k9-inntektsmelding",
     "sif-abac-pdp"
   ],

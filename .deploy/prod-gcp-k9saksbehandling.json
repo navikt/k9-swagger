@@ -12,7 +12,7 @@
   "outboundExternals": [
     "k9-abakus.prod-fss-pub.nais.io"
   ],
-  "ouboundRules" : [
+  "outboundRules" : [
     "k9-inntektsmelding"
   ],
   "customCss": ".swagger-ui .topbar { background-color: red; } .swagger-container { background: #F9D0C4; } .swagger-ui .scheme-container { background: #F9D0C4; }",
