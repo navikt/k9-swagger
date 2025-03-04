@@ -37,8 +37,8 @@
     },
     {
       "path": "/k9/los/api",
-      "url": "https://k9-los-api.dev-fss-pub.nais.io",
-      "scope": "api://dev-fss.k9saksbehandling.k9-los-api/swagger",
+      "url": "https://k9-los-api.prod-fss-pub.nais.io",
+      "scope": "api://prod-fss.k9saksbehandling.k9-los-api/swagger",
       "name": "k9-los"
     }
   ]
