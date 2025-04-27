@@ -47,6 +47,6 @@
       "url": "https://sif-abac-pdp.dev-fss-pub.nais.io",
       "scope": "api://dev-fss.k9saksbehandling.sif-abac-pdp/swagger",
       "name": "sif-abac-pdp-fss"
-    },
+    }
   ]
 }
