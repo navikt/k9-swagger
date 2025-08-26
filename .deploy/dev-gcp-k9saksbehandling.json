@@ -14,7 +14,8 @@
     "sif-abac-pdp.dev-fss-pub.nais.io"
   ],
   "outboundRules" : [
-    "k9-inntektsmelding"
+    "k9-inntektsmelding",
+    "ung-tilbake"
   ],
   "customCss": "",
   "proxyRedirects": [
@@ -47,6 +48,12 @@
       "url": "https://sif-abac-pdp.dev-fss-pub.nais.io",
       "scope": "api://dev-fss.k9saksbehandling.sif-abac-pdp/swagger",
       "name": "sif-abac-pdp-fss"
+    },
+    {
+      "path": "/ung/tilbake/api",
+      "url": "http://ung-tilbake.k9saksbehandling",
+      "scope": "api://dev-fss.k9saksbehandling.ung-tilbake/swagger",
+      "name": "ung-tilbake"
     }
   ]
 }
