@@ -3,8 +3,8 @@ version: '3.7'
 services:
   k9swagger:
     build:
-      context: .
-      dockerfile: server/Dockerfile
+      context: ./server
+      dockerfile: ./Dockerfile
     ports:
       - "9090:9090"
     environment:
