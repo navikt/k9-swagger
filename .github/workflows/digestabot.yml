@@ -19,4 +19,4 @@ jobs:
         with:
           working-dir: ./server
           token: ${{ secrets.GITHUB_TOKEN }}
-          team: k9-saksbehandling
+          team: k9saksbehandling
