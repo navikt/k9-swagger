@@ -8,7 +8,7 @@ registries:
 
 updates:
   - package-ecosystem: npm
-    directory: "/"
+    directory: "/server"
     registries:
       - ft-frontend-saksbehandling
     schedule:
