@@ -15,8 +15,11 @@ updates:
       interval: weekly
     open-pull-requests-limit: 20
     groups:
-      actions:
+      production:
         dependency-type: "production"
+      development:
+        dependency-type: "development"
+
   - package-ecosystem: github-actions
     directory: "/"
     schedule:
@@ -24,4 +27,5 @@ updates:
     open-pull-requests-limit: 10
     groups:
       actions:
-        dependency-type: "production"
+        patterns:
+          - "*"
