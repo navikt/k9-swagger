@@ -28,22 +28,22 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "3.3.1",
-    "@eslint/js": "9.36.0",
+    "@eslint/js": "9.37.0",
     "@types/connect-timeout": "1.9.0",
     "@types/cors": "2.8.19",
     "@types/express": "5.0.3",
     "@types/express-http-proxy": "1.6.7",
     "@types/morgan": "1.9.10",
     "@types/swagger-ui-express": "4.1.8",
-    "@typescript-eslint/eslint-plugin": "8.44.1",
+    "@typescript-eslint/eslint-plugin": "8.45.0",
     "@vercel/ncc": "0.38.4",
-    "eslint": "9.36.0",
+    "eslint": "9.37.0",
     "eslint-plugin-prettier": "5.5.4",
     "eslint-plugin-simple-import-sort": "12.1.1",
     "eslint-plugin-unicorn": "61.0.2",
     "parcel": "^2.16.0",
     "prettier": "3.6.2",
-    "typescript": "5.9.2",
-    "typescript-eslint": "8.44.1"
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.45.0"
   }
 }
