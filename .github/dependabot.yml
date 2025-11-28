@@ -13,6 +13,8 @@ updates:
       - ft-frontend-saksbehandling
     schedule:
       interval: weekly
+    cooldown:
+      default-days: 7
     open-pull-requests-limit: 20
     groups:
       production:
@@ -24,6 +26,8 @@ updates:
     directory: "/"
     schedule:
       interval: weekly
+    cooldown:
+      default-days: 7
     open-pull-requests-limit: 10
     groups:
       actions:
