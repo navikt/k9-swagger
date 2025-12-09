@@ -11,7 +11,8 @@
   ],
   "outboundExternals": [
     "k9-abakus.dev-fss-pub.nais.io",
-    "sif-abac-pdp.dev-fss-pub.nais.io"
+    "sif-abac-pdp.dev-fss-pub.nais.io",
+    "k9-klage.dev-fss-pub.nais.io"
   ],
   "outboundRules" : [
     "k9-inntektsmelding",
@@ -30,6 +31,12 @@
       "url": "https://k9-tilbake.dev-fss-pub.nais.io",
       "scope": "api://dev-fss.k9saksbehandling.k9-tilbake/swagger",
       "name": "k9-tilbake"
+    },
+    {
+      "path": "/k9/klage/api",
+      "url": "https://k9-klage.dev-fss-pub.nais.io",
+      "scope": "api://dev-fss.k9saksbehandling.k9-klage/swagger",
+      "name": "k9-klage"
     },
     {
       "path": "/k9/inntektsmelding/forvaltning/api",
