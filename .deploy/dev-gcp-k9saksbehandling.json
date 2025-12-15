@@ -28,10 +28,10 @@
       "name": "k9-abakus"
     },
     {
-      "path": "/k9/kalkulus/api",
+      "path": "/ftkalkulus/api",
       "url": "https://ftkalkulus.dev-fss-pub.nais.io",
       "scope": "api://dev-fss.k9saksbehandling.ftkalkulus/swagger",
-      "name": "k9-kalkulus"
+      "name": "ftkalkulus"
     },
     {
       "path": "/k9/tilbake/api",
