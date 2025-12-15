@@ -11,6 +11,7 @@
   ],
   "outboundExternals": [
     "k9-abakus.dev-fss-pub.nais.io",
+    "ftkalkulus.dev-fss-pub.nais.io",
     "sif-abac-pdp.dev-fss-pub.nais.io",
     "k9-klage.dev-fss-pub.nais.io"
   ],
@@ -25,6 +26,12 @@
       "url": "https://k9-abakus.dev-fss-pub.nais.io",
       "scope": "api://dev-fss.k9saksbehandling.k9-abakus/swagger",
       "name": "k9-abakus"
+    },
+    {
+      "path": "/k9/kalkulus/api",
+      "url": "https://ftkalkulus.dev-fss-pub.nais.io",
+      "scope": "api://dev-fss.k9saksbehandling.ftkalkulus/swagger",
+      "name": "k9-kalkulus"
     },
     {
       "path": "/k9/tilbake/api",
