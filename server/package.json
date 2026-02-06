@@ -31,19 +31,19 @@
     "@eslint/js": "9.39.2",
     "@types/connect-timeout": "1.9.0",
     "@types/cors": "2.8.19",
-    "@types/express": "5.0.5",
+    "@types/express": "5.0.6",
     "@types/express-http-proxy": "1.6.7",
     "@types/morgan": "1.9.10",
     "@types/swagger-ui-express": "4.1.8",
-    "@typescript-eslint/eslint-plugin": "8.49.0",
+    "@typescript-eslint/eslint-plugin": "8.53.0",
     "@vercel/ncc": "0.38.4",
     "eslint": "9.39.2",
-    "eslint-plugin-prettier": "5.5.4",
+    "eslint-plugin-prettier": "5.5.5",
     "eslint-plugin-simple-import-sort": "12.1.1",
     "eslint-plugin-unicorn": "62.0.0",
     "parcel": "^2.16.3",
-    "prettier": "3.7.4",
+    "prettier": "3.8.0",
     "typescript": "5.9.3",
-    "typescript-eslint": "8.49.0"
+    "typescript-eslint": "8.53.0"
   }
 }
