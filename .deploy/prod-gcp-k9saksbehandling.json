@@ -16,7 +16,7 @@
   ],
   "outboundRules" : [
     "k9-inntektsmelding",
-    "ung-brukerdialgog-api"
+    "ung-brukerdialog-api"
   ],
   "customCss": ".swagger-ui .topbar { background-color: red; } .swagger-container { background: #F9D0C4; } .swagger-ui .scheme-container { background: #F9D0C4; }",
   "proxyRedirects": [

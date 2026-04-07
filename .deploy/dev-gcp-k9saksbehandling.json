@@ -18,7 +18,7 @@
   "outboundRules" : [
     "k9-inntektsmelding",
     "ung-tilbake",
-    "ung-brukerdialgog-api"
+    "ung-brukerdialog-api"
   ],
   "customCss": "",
   "proxyRedirects": [
