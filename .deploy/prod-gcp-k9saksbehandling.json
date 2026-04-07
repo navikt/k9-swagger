@@ -24,7 +24,7 @@
       "path": "/ung/brukerdialog/intern/api",
       "url": "http://ung-brukerdialog-api.k9saksbehandling",
       "scope": "api://prod-gcp.k9saksbehandling.ung-brukerdialog-api/swagger",
-      "name": "ung-brukerdialgog-api"
+      "name": "ung-brukerdialog-api"
     },
     {
       "path": "/k9/abakus/api",
