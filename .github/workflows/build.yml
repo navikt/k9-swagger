@@ -97,3 +97,9 @@ jobs:
       input_vars_file: .deploy/prod-gcp-k9saksbehandling.json
       naiserator_file: .deploy/naiserator.yaml
     secrets: inherit
+
+  sif-code-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: navikt/sif-gha-workflows/.github/actions/sif-code-scan@main
