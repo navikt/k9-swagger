@@ -1,4 +1,4 @@
-FROM europe-north1-docker.pkg.dev/cgr-nav/pull-through/nav.no/node:22@sha256:a3f373af920a69f4b94a336ce68e7f477c0bd1a6bc65138b90f321ff98ce5734
+FROM europe-north1-docker.pkg.dev/cgr-nav/pull-through/nav.no/node:22@sha256:235eced4054794fcf80027d01ba23f9e039956703f7e3494669ccc947ea81810
 
 LABEL org.opencontainers.image.source=https://github.com/navikt/k9-swagger
 ENV TZ="Europe/Oslo"
