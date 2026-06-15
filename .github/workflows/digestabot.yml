@@ -17,7 +17,7 @@ jobs:
       - uses: actions/checkout@v6
         with:
           persist-credentials: false
-      - uses: navikt/digestabot@6c419f9c92ce6a841d25d44e1f91ae8d371ecdd3
+      - uses: navikt/digestabot@3302a753e533ceb9ec216de7f78345436cd636e3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           team: k9saksbehandling
