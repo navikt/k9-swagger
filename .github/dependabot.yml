@@ -8,7 +8,7 @@ registries:
 
 updates:
   - package-ecosystem: npm
-    directory: "/server"
+    directory: "/"
     registries:
       - ft-frontend-saksbehandling
     schedule:
@@ -17,10 +17,18 @@ updates:
       default-days: 7
     open-pull-requests-limit: 20
     groups:
-      production:
+      minor:
+        update-types:
+          - "minor"
+          - "patch"
+      prod-major:
         dependency-type: "production"
-      development:
+        update-types:
+          - "major"
+      dev-major:
         dependency-type: "development"
+        update-types:
+          - "major"
 
   - package-ecosystem: github-actions
     directory: "/"
