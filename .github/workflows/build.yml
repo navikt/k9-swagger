@@ -51,21 +51,19 @@ jobs:
 
       - name: Install server dependencies
         run: pnpm install --frozen-lockfile
-        working-directory: server
         env:
           NODE_AUTH_TOKEN: ${{ secrets.READER_TOKEN }}
 
       - name: Build server
         run: pnpm run build
-        working-directory: server
 
       - name: Bygg og push docker image
         uses: navikt/sif-gha-workflows/.github/actions/maven/build-push-docker-image@main # ratchet:exclude
         with:
           build-version: ${{ steps.generate-build-version.outputs.build-version }}
           push-image: ${{ github.ref_name == 'main' }}
-          docker_context: "./server"
-          dockerfile: "./server/Dockerfile"
+          docker_context: "."
+          dockerfile: "./Dockerfile"
 
   deploy-dev:
     name: Deploy dev

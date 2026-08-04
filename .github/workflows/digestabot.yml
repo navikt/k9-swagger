@@ -21,7 +21,6 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           team: k9saksbehandling
-          working-dir: "server"
           branch-for-pr: "update-baseimage"
           title-for-pr: "Update baseimage"
 
