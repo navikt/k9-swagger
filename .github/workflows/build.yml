@@ -27,7 +27,7 @@ jobs:
 
       - run: git fetch --prune --unshallow
 
-      - uses: nais/login@v0
+      - uses: nais/login@bb6c3e1e14e53d40d69d0d092bd2fce2e39ae3bf # ratchet:nais/login@v0
         with:
           team: k9saksbehandling
 
@@ -38,6 +38,9 @@ jobs:
           registry-url: https://npm.pkg.github.com/
           scope: '@navikt'
 
+      - name: Sette opp pnpm
+        uses: pnpm/action-setup@a7487c7e89a18df4991f7f222e4898a00d66ddda # ratchet:pnpm/action-setup@v4.2.0
+
       - name: Generate build version
         id: generate-build-version
         run: |
@@ -47,13 +50,13 @@ jobs:
         run: echo "Generated build-version is ${{ steps.generate-build-version.outputs.build-version }}"
 
       - name: Install server dependencies
-        run: npm install
+        run: pnpm install --frozen-lockfile
         working-directory: server
         env:
           NODE_AUTH_TOKEN: ${{ secrets.READER_TOKEN }}
 
       - name: Build server
-        run: npm run build
+        run: pnpm run build
         working-directory: server
 
       - name: Bygg og push docker image
@@ -63,8 +66,6 @@ jobs:
           push-image: ${{ github.ref_name == 'main' }}
           docker_context: "./server"
           dockerfile: "./server/Dockerfile"
-          project_id: ${{ vars.NAIS_MANAGEMENT_PROJECT_ID }}
-          identity_provider: ${{ secrets.NAIS_WORKLOAD_IDENTITY_PROVIDER }}
 
   deploy-dev:
     name: Deploy dev
@@ -101,6 +102,6 @@ jobs:
   sif-code-scan:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6.0.3
-      - uses: navikt/sif-gha-workflows/.github/actions/sif-code-scan@v1
+      - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # ratchet:actions/checkout@v6.0.3
+      - uses: navikt/sif-gha-workflows/.github/actions/sif-code-scan@main # ratchet:navikt/sif-gha-workflows/.github/actions/sif-code-scan@v1
 
