@@ -41,10 +41,10 @@
     "eslint": "10.8.0",
     "eslint-plugin-prettier": "5.5.6",
     "eslint-plugin-simple-import-sort": "14.0.0",
-    "eslint-plugin-unicorn": "72.0.0",
+    "eslint-plugin-unicorn": "74.0.0",
     "parcel": "^2.16.4",
     "prettier": "3.9.6",
-    "typescript": "6.0.3",
+    "typescript": "7.0.2",
     "typescript-eslint": "8.65.0"
   }
 }
