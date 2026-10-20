@@ -73,7 +73,7 @@
     {
       "path": "/ung/tilbake/api",
       "url": "http://ung-tilbake.k9saksbehandling",
-      "scope": "api://dev-fss.k9saksbehandling.ung-tilbake/swagger",
+      "scope": "api://dev-gcp.k9saksbehandling.ung-tilbake/swagger",
       "name": "ung-tilbake"
     }
   ]
